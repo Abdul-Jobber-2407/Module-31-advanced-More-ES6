@@ -1,0 +1,87 @@
+<!-- Parameter VS Argument 
+
+function  add (a,b){// a,b is a Parameter
+    return a+b;
+}
+add (2,2) // 4 and here 2,2 is a argument 
+***************************************************************** -->
+
+<!-- 
+Default Parameters
+If a function in JavaScript is called with missing arguments (less than declared), the missing values are set to undefined.
+
+Sometimes this is acceptable, but sometimes it is better to assign a default value to the parameter:
+
+function myFunction (x, y = 2) {
+  // function code
+}
+
+function myFunction(x, y) {
+  if (y === undefined) {
+    y = 2;
+  }
+}
+ ***********************************************************************-->
+
+ <!-- Without default parameters 
+  function add(a,b){
+    console.log(a);
+    console.log(b);
+  }
+    add(); // output :undifined , undifined 
+_______________________________________________________________________________
+function add(a,b){
+console.log(a+b);
+}
+console.log(7);  // output : NaN
+  *********************************************************************-->
+
+  <!-- With default parameters 
+   function add (a=2 , b= 10){
+   console.log(a);
+   console.log(b);
+   }
+   add(); // output: 2, 10 
+   _____________________________________________________________
+   function add(a, b=0){
+   console.log(a+b);
+    }
+   add(7); // Output : 7 ;
+   ************************************************************************-->
+
+   <!-- JavaScript Destructuring
+
+   Destructuring Assignment Syntax
+The destructuring assignment syntax unpack object properties into variables:
+let {firstName, lastName} = person;
+
+It can also unpack arrays and any other iterables:
+let [firstName, lastName] = person;
+------------------------------------------
+// Create an Object
+const person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 50
+  };
+  
+  // Destructuring
+  let {firstName, lastName} = person;
+ const name= firstName + " " + lastName;
+ console.log(name);
+ --------------------------------------------------------
+ Object Default Values
+For potentially missing properties we can set default values:
+
+// Create an Object
+const person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 50
+  };
+  
+  // Destructuring
+  let {firstName, lastName, country = "US"} = person;
+ const address= firstName + " " + lastName + " " + country;
+ console.log(address);
+     -->
